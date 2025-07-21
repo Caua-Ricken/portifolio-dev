@@ -1,10 +1,12 @@
 # 🧑‍💻 Portfólio - Cauã Ricken
 
+![Preview do Portfólio](imagens/img-portifolio.png)
+
 Este é meu portfólio pessoal, desenvolvido com HTML, CSS e JavaScript, onde apresento meus projetos, habilidades e uma forma de contato direto via WhatsApp. O site foi pensado com foco em design moderno, responsividade e uma navegação simples.
 
 ## 🔗 Acesse o site
 
-👉 [Clique aqui para acessar o portfólio online](https://dev-caua-ricken.github.io/)
+👉 [Clique aqui para acessar o portfólio online](https://caua-ricken.github.io/portifolio-dev/)
 
 ---
 
