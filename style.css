@@ -315,3 +315,35 @@ body{
     color: var(--claro);
 }
 
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .introducao h1 {
+    font-size: 3rem;
+  }
+
+  .form-button {
+    font-size: 1.4rem;
+  }
+}
+
+
