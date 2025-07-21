@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto Condensed";
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Indie+Flower&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+/*header*/
+.topo{
+    position: fixed;
+    top: 0;
+    padding: 1.5rem;
+    background-color: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 1000;
+}
+
+.navegacao{
+    padding: 1rem 0;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+}
+.link::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+.link:hover::before{
+    width: 100%;
+}
+
+/*inicio*/
+.introducao{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img{
+    width: 38rem;
+    height: 38rem;
+    box-shadow: 0 0 2rem rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+    animation: animacao 5s ease-in-out infinite;
+}
+@keyframes animacao{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    } 
+}
+
+.introducao h1{
+    font-size: 4.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin:2rem 0;
+    text-transform: capitalize;
+}
+
+.introducao p{
+    font-size: 1.8rem;
+    color: var(--claro);
+    text-transform: capitalize;
+}
+
+/*sobre*/
+.sobre{
+    padding: 6rem 2rem;
+    scroll-margin-top: 3rem;
+}
+
+.sobre-title{
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre-caixa{
+    padding: 2rem;
+    max-width: 71rem;
+    margin:0 auto;
+    border-radius: 1.6rem;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(2rem);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.linguagens{
+    padding: 6rem 2rem;
+}
+
+.linguagens-caixa{
+    padding: 2rem;
+    max-width: 71rem;
+    margin:0 auto;
+    border-radius: 1.6rem;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(2rem);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.linguagem-titulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    text-align: center;
+}
+
+.linguagens-pro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linguagem-img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.sobre-p{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/*projetos*/
+.sobre-projetos{
+    scroll-margin-top: 3rem;
+    padding: 6rem 2rem;
+}
+.projeto-title{
+    text-align: center;
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+.projeto-caixa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.projetos-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    border-radius: 1.6rem;
+    overflow: hidden;
+    flex: 1 1 30rem;
+    transition: all 0.5s ease;
+}
+.projetos-card:hover{
+    box-shadow: 0 1rem 2rem rgba(79, 70, 229, 0.2);
+    transform: translateY(-1rem) scale(1.03);
+    cursor: pointer;
+}
+
+.projeto-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title-projeto {
+    margin-bottom: 0.6rem;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+
+}
+
+.p-projeto {
+    color: rgba(226, 232, 240, 0.8); 
+    font-size: 1.8rem;
+}
+
+.projeto-texto{
+    padding: 1.5rem;
+}
+
+/*contatos*/
+.contatos{
+    margin-bottom: 6rem;
+}
+
+.contatos-title{
+    text-align: center;
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    margin-top: 4rem;
+}
+
+.form-contato{
+    max-width: 60rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    margin-bottom: 6rem;
+}
+
+.grupo-form{
+    margin-bottom: 1.5rem;
+}
+
+.campo-form{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--claro);
+    border: 1px solid var(--vidro);
+    outline: none;
+    text-transform: capitalize;
+}
+.campo-form:focus{
+    border-color: var(--secundaria);
+    box-shadow: 0 0 1rem rgba(79, 70, 229, 0.3);
+}
+
+.form-button{
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+.form-button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.5rem rgba(79, 70, 229, 0.4);
+}
+
+.particula{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%);
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    gap: 0.5rem;
+}
+
+.final-texto{
+    font-size: 1.6rem;
+}
+
+.final-img{
+    font-size: 5rem;
+    color: var(--claro);
+}
+

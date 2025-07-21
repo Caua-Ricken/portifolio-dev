@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./imagens/favi icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio-dev</title>
+</head>
+<body>
+
+    <div class="particula"></div>
+
+    <header class="topo">
+        <nav class="navegacao">
+            <ul class="menu">
+                <li><a href="#inicio" class="link">inicio</a></li>
+                <li><a href="#sobre" class="link">sobre</a></li>
+                <li><a href="#projetos" class="link">projetos</a></li>
+                <li><a href="#contatos" class="link">contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio" class="introducao">
+        <img src="./imagens/minhaFoto.jpeg" alt="foto de cauã" class="img">
+        <h1>cauã ricken</h1>
+        <p>desenvolvedor front-end</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-title">sobre mim</h2>
+        <div class="sobre-caixa">
+          <p class="sobre-p">Sou estudante de Sistemas de Informação, apaixonado por desenvolvimento de software e tecnologia. Acredito que programar vai muito além de escrever código, é encontrar soluções criativas para problemas reais e impactar a vida das pessoas com sistemas inteligentes e funcionais.</p>
+        </div>
+    </section>
+
+    <section class="linguagens">
+        <div class="linguagens-caixa">
+            <h2 class="linguagem-titulo">linguagens</h2>
+            <div class="linguagens-pro">
+                <img src="./imagens/html-5.png" alt="html logo" class="linguagem-img">
+                <img src="./imagens/baixados.png" alt="css logo" class="linguagem-img">
+                <img src="./imagens/javascript-logo-javascript-icon-transparent-free-png.webp" alt="JavaScript logo"
+                    class="linguagem-img">
+                <img src="./imagens/1174953.webp" alt="logo java" class="linguagem-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="sobre-projetos">
+        <h2 class="projeto-title">meus projetos</h2>
+        <div class="projeto-caixa">
+
+            <div class="projetos-card">
+                <a href="https://dev-caua-ricken.github.io/refrigerante/" target="_blank"><img src="./imagens/projeto refri.png" alt="projeto refri" class="projeto-img"></a>
+                <div class="projeto-texto">
+                    <h3 class="title-projeto">refrigerante</h3>
+                    <p class="p-projeto">O projeto Refrigerante é um carrossel interativo desenvolvido com HTML, CSS e JavaScript que permite ao usuário navegar entre diferentes latas de refrigerantes utilizando botões de avançar e voltar.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <a href="https://dev-caua-ricken.github.io/WineHub/" target="_blank"><img src="./imagens/projeto wineHub (1).png" alt="projeto wineHub" class="projeto-img"></a>
+                <div class="projeto-texto">
+                    <h3 class="title-projeto">wineHub</h3>
+                    <p class="p-projeto">Página para apresentação e venda de vinhos, desenvolvida com HTML, CSS e JavaScript. O usuário
+                        pode explorar os produtos disponíveis e realizar compras diretamente pelo site, com um visual elegante e foco na
+                        simplicidade da navegação.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <a href="https://dev-caua-ricken.github.io/weather/" target="_blank"><img src="./imagens/projeto tempo.png" alt="projeto weather" class="projeto-img"></a>
+                <div class="projeto-texto">
+                    <h3 class="title-projeto">projeto do tempo</h3>
+                    <p class="p-projeto">Aplicação web de previsão do tempo desenvolvida com HTML, CSS e JavaScript. O usuário pode
+                        buscar qualquer cidade e visualizar informações meteorológicas em tempo real, como temperatura atual. O projeto
+                        utiliza a API da OpenWeather para fornecer dados atualizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos">
+        <h2 class="contatos-title">entre em contato</h2>
+
+        <form action="" class="form-contato" id="formulario" onsubmit="enviar(event)">
+            <div class="grupo-form">
+              <input type="text" placeholder="nome" class="campo-form" required id="nome">
+            </div>
+
+            <div class="grupo-form">
+              <textarea placeholder="digite sua mensagem" class="campo-form" required id="texto" rows="6"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">enviar whatsApp</button>
+
+        </form>
+    </section>
+
+    <footer class="final">
+        <p class="final-texto"> © 2025 Cauã Ricken — </p>
+        <a href="https://github.com/Dev-Caua-Ricken" class="final-img" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/cau%C3%A3-ricken-983b28318/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUbWobTePSoSEz4nX1t1zaw%3D%3D"
+            class="final-img" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
