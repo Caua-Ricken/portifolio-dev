@@ -6,7 +6,7 @@ Este é meu portfólio pessoal, desenvolvido com HTML, CSS e JavaScript, onde ap
 
 ## 🔗 Acesse o site
 
-👉 [Clique aqui para acessar o portfólio online](https://dev-caua-ricken.github.io/portifolio-dev/)
+👉 [Clique aqui para acessar o portfólio online](https://caua-ricken.github.io/portifolio-dev/)
 
 ---
 
