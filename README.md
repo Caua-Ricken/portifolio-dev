@@ -43,7 +43,7 @@ Este é meu portfólio pessoal, desenvolvido com HTML, CSS e JavaScript, onde ap
 
 Você pode entrar em contato diretamente pelo formulário do site, que envia sua mensagem via WhatsApp, ou pelos links abaixo:
 
-- GitHub: [Dev-Caua-Ricken](https://github.com/Dev-Caua-Ricken)
+- GitHub: [Dev-Caua-Ricken](https://github.com/Caua-Ricken)
 - LinkedIn: [Cauã Ricken](https://www.linkedin.com/in/cauã-ricken-983b28318/)
 
 ---
