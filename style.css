@@ -157,11 +157,13 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .linguagem-img{
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .sobre-p{
